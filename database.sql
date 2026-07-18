@@ -1,14 +1,12 @@
 -- MySQL Database Script for Skill Swap Platform
 -- Database name: skillswap
 
-CREATE DATABASE IF NOT EXISTS `skillswap` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE `skillswap`;
 
 -- -----------------------------------------------------
 -- Table `users`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `users`;
-CREATE TABLE IF NOT EXISTS `users` (
+CREATE TABLE IF NOT EXISTS `users`(
   `id` BIGINT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(255) NOT NULL,
   `email` VARCHAR(255) NOT NULL UNIQUE,
