@@ -12,6 +12,8 @@ import Footer from './components/Footer';
 import LandingPage from './pages/LandingPage';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import ForgotPassword from './pages/ForgotPassword';
+import ResetPassword from './pages/ResetPassword';
 import HomeDashboard from './pages/HomeDashboard';
 import Profile from './pages/Profile';
 import EditProfile from './pages/EditProfile';
@@ -36,6 +38,8 @@ function App() {
               <Route path="/" element={<LandingPage />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
+              <Route path="/forgot-password" element={<ForgotPassword />} />
+              <Route path="/reset-password" element={<ResetPassword />} />
               <Route path="/search" element={<SearchResults />} />
               <Route path="/profile/:id" element={<Profile />} />
 
