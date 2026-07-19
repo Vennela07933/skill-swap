@@ -22,7 +22,7 @@ const Footer = () => {
             <ul className="mt-4 space-y-2 text-sm">
               <li><Link to="/search" className="hover:text-white transition">Explore Skills</Link></li>
               <li><Link to="/register" className="hover:text-white transition">Join Platform</Link></li>
-              <li><a href="${import.meta.env.VITE_API_URL}/swagger-ui.html" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">API Swagger Docs</a></li>
+              <li><a href={`${import.meta.env.VITE_API_URL}/swagger-ui.html`} target="_blank" rel="noopener noreferrer" className="hover:text-white transition">API Swagger Docs</a></li>
             </ul>
           </div>
 
