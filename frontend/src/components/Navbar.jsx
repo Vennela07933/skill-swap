@@ -114,7 +114,8 @@ const Navbar = () => {
                 <Link to={`/profile/${user.id}`} className="flex items-center space-x-2 text-slate-300 hover:text-white transition">
                   {user.profilePicture ? (
                     <img
-                      src={`http://localhost:8080${user.profilePicture}`}
+                      //src={`http://localhost:8080${user.profilePicture}`}
+                      src={`${import.meta.env.VITE_API_URL}${user.profilePicture}`}
                       alt={user.name}
                       className="w-8 h-8 rounded-full border border-slate-600 object-cover"
                       onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&h=80&q=80'; }}

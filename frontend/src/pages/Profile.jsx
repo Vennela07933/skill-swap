@@ -92,7 +92,7 @@ const Profile = () => {
         {/* Profile picture upload overlay */}
         <div className="relative group">
           <img
-            src={profile.profilePicture ? `http://localhost:8080${profile.profilePicture}` : 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&h=150&q=80'}
+            src={profile.profilePicture ? `${import.meta.env.VITE_API_URL}${profile.profilePicture}` : 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&h=150&q=80'}
             alt={profile.name}
             className="w-32 h-32 md:w-36 md:h-36 rounded-full object-cover border-2 border-slate-700 shadow-xl"
             onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&h=150&q=80'; }}

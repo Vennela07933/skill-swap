@@ -265,7 +265,7 @@ const SearchResults = () => {
                     {/* User header */}
                     <div className="flex items-center gap-4 mb-4">
                       <img
-                        src={u.profilePicture ? `http://localhost:8080${u.profilePicture}` : 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&h=80&q=80'}
+                        src={u.profilePicture ? `${import.meta.env.VITE_API_URL}${u.profilePicture}` : 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&h=80&q=80'}
                         alt={u.name}
                         className="w-12 h-12 rounded-full object-cover border border-slate-700"
                         onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&h=80&q=80'; }}
